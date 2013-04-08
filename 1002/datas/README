@@ -1,0 +1,68 @@
+ACM International Collegiate Programming Contest
+1999 East Central North America Regional Contest
+November 13, 1999
+University of Waterloo
+
+Chief Judge: Howard Cheng <hchcheng@scg.math.uwaterloo.ca>
+
+These are the sample solutions, test inputs and test outputs used for the
+1999 East Central North America regional contest of the ACM International
+Collegiate Programming Contest.  Please see
+
+  http://plg.uwaterloo.ca/~acm00/regionals/
+
+for the problem set, contact information, standings and so forth.
+
+The judges (collectively or individually, as appropriate)  hold copyright
+on the solutions and test data.  If you distribute them, you must do so
+with this README file.  If you make altered versions of the files available
+to others, then you must clearly indicate the changes that you have made
+in addition to observing any restrictions on the original files.  You
+may use this data set for educational purposes, personal edification and
+running practice contests.  If you find a commercial application for these
+files then you will need to contact the authors before making use of them
+in that way. 
+
+To be considered correct, the following (Unix) command-line should
+produce no output for each test case:
+
+  ./my-pX < X.N.dat | diff - X.N.diff
+
+Additionally, the programs must run in 16MB of RAM and 5s of CPU time on
+the particular sort of Sparc Ultra/4 that we were using and not generate
+any runtime errors.  I understand that
+
+  char x[10];
+  for( i=0 ; i < 10 ; i++ ) scanf( "%d", x+i );
+
+appears to work on Intel processors running certain operating systems.
+On the machine used this would generate a bus error due to using an
+unaligned pointer to an integer quantity.  (Moreover, this code could
+get the wrong answer or generate a segmentation fault on some machines
+that don't get bus errors, depending on how memory is arranged.)
+
+Differences in malloc() implementations will give greatly different
+results with incorrect programs.
+
+If you solved a problem in Pascal ... different Pascal implementations
+vary wildly.  For that matter, so do C++ implementations.  We used
+gcc/g++ 2.95.2 with -ansi and -O2 flags.  
+
+Java solutions were tested on an Intel Pentium II-400 PC running IBM
+VisualAge C++ on Windows NT.   The run time is limited to 15s on this
+machine.
+
+Some of the judge's solutions were not built in the contest environment. 
+In particular, one of the solutions to G runs too long but was used to
+check the output of the other programs.  They were not tested on every
+platform in existence, so they might conceivably rely on
+platform-dependent issues (such as mentioned above) to function correctly. 
+
+Derek Kisman wrote solutions to all problems except A and C in the contest
+environment.  He was working in contest conditions.  His solutions to A
+and C were written later.
+
+The solutions were created before the problem details were finalized, so
+some may show rudiments of earlier requirements.  Modifying the programs
+to work with changed specifications was not always done with grace.
+
